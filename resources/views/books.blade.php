@@ -6,13 +6,13 @@
     </head>
     <body>
 @extends('master')
-@section('title', 'Books')
+@section('title', 'Contact')
 
 @section('content')
     <div class="container">
         <div class="content">
-            <div class="title">Contact Page</div>
-            <div class="quote">Our contact page!</div>
+            <div class="title">Books</div>
+            <div class="quote">Display books</div>
         </div>
     </div>
 @endsection
