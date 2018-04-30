@@ -11,7 +11,19 @@
 |
 */
 
+Use App\User;
+
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
-Route::get('/contact', 'PagesController@contact');
+//Route::get('/contact', 'PagesController@contact');
 Route::get('/books', 'PagesController@books');
+
+
+Route::get('/contact', 'TicketsController@create');
+Route::post('/contact', 'TicketsController@store');
+Route::get('/tickets', 'TicketsController@index');
+// Return a single ticket
+Route::get('/ticket/{slug?}', 'TicketsController@show');
+//get('users', function() ){
+//	return App\User::all();
+//}
