@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTicketsTabke extends Migration
+class CreateTicketsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,6 +13,7 @@ class CreateTicketsTabke extends Migration
      */
     public function up()
     {
+        // Schema is a class that we can use to define and manipulate tables. This create the tickets table
         Schema::create('tickets', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title', 255);
