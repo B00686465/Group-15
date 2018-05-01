@@ -14,7 +14,9 @@ class TicketsController extends Controller
      */
     public function index()
     {
+        // Gets all tickets in our database and stores them
         $tickets = Ticket::all();
+        // Compact() Convert the result to an array and pass it to a view
         return view('tickets.index', compact('tickets'));
     }
 
@@ -57,9 +59,11 @@ class TicketsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        // firstorFail will retrive the first result of the query, or if there is no result a model not found except is thrown
+        $ticket = Ticket::whereSlug($slug)->firstOrFail();
+        return view('tickets.show', compact('ticket'));
     }
 
     /**

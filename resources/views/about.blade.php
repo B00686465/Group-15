@@ -1,10 +1,4 @@
-<html>
-    <head>
-        <title>About Page</title>
 
-        
-    </head>
-    <body>
 @extends('master')
 @section('title', 'About')
 

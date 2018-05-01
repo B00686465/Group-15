@@ -23,8 +23,15 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member 
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
+                        @if (Auth::check())
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="/users/logout">Logout</a></li>
+                        @else
                         <li><a href="/users/register">Register</a></li>
                         <li><a href="/users/login">Login</a></li>
+                        @endif
                     </ul>
                 </li>
             </ul>

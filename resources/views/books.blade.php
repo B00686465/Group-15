@@ -1,12 +1,5 @@
-<html>
-    <head>
-        <title>Contact Page</title>
-
-       
-    </head>
-    <body>
 @extends('master')
-@section('title', 'Contact')
+@section('title', 'Books')
 
 @section('content')
     <div class="container">

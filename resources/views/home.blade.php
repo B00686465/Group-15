@@ -1,31 +1,26 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+@extends('master')
+@section('title', 'Contact')
 
-        <title>Home Page</title>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-       
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-        
-    </head>
-    <body>
-
-    @extends('master')
-    @section('title', 'Home')
-
-    @section('content')
-    <div class="container">  
-        <div class="content">
-                <div class="title">Home page </div>
-                <div class="quote">Our Home page!</div>
-                <button class="btn">Click me!</button>
+                    You are logged in!
+                </div>
+            </div>
         </div>
-    </div>    
-    @endsection
-        
-    </body>
-</html>
+    </div>
+</div>
+@endsection
+
+

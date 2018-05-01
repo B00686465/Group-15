@@ -24,6 +24,13 @@ Route::post('/contact', 'TicketsController@store');
 Route::get('/tickets', 'TicketsController@index');
 // Return a single ticket
 Route::get('/ticket/{slug?}', 'TicketsController@show');
-//get('users', function() ){
-//	return App\User::all();
-//}
+
+
+Auth::routes();
+
+Route::get('/home', 'PagesController@home')->name('home');
+
+
+Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
+Route::post('users/register', 'Auth\RegisterController@register');
+Route::get('users/logout', 'Auth\LoginController@logout')->name('logout');
