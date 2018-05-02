@@ -1,5 +1,5 @@
 @extends('master')
-@section('name', 'Register')
+@section('name', 'Login')
 
 @section('content')
 <div class="container">
