@@ -19,10 +19,10 @@ class PagesController extends Controller
     }
     public function contact()
     {
-    	return view('contact');
+    	return view('tickets.create');
     }
     public function books()
     {
-    	return view('books');
+    	return view('shop.books');
     }
 }
