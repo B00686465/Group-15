@@ -15,12 +15,16 @@
         <!-- Navbar Right -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/books">Books</a></li>
+                <li class="active"><a href="/"> <i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/about">
+                    <i class="far fa-question-circle"></i> About</a></li>
+                <li><a href="/contact">
+                    <i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="/books"><i class="fas fa-book"></i> Books</a></li>
+                <li><a href="/basket"><i class="fas fa-shopping-basket"></i> Basket</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member 
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
+                        <i class="fas fa-user"></i> User
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         @if (Auth::check())
