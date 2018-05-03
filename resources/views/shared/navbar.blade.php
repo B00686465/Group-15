@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="/"> <i class="fas fa-home"></i> Home</a></li>
                 <li><a href="/about">
-                    <i class="far fa-question-circle"></i> About</a></li>
+                    <i class="far fa-question-circle"></i>  About</a></li>
                 <li><a href="/contact">
                     <i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="/books"><i class="fas fa-book"></i> Books</a></li>

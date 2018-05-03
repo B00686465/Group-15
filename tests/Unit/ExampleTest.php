@@ -9,7 +9,7 @@ class ExampleTest extends TestCase
 {
     /**
      * A basic test example.
-     *
+     * Individual units
      * @return void
      */
     public function testBasicTest()

@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App/user;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
