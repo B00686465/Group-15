@@ -18,10 +18,12 @@ class BooksTableSeeder extends Seeder
         	'unitprice'=> 5,
         	'retailprice'=> 5,
         	'instock'=> 20,
-        	'reorderlevel'=>5
-       // 	'Image' => ''
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/colour.jpg')
+      
         ]);
         $book->save();
+
         $book = new \App\Books([
         	'bookname' => 'Crime And Punishment',
         	'bookdescription'=> 'Psychological crime novel based in St. Petersburg',
@@ -29,21 +31,23 @@ class BooksTableSeeder extends Seeder
         	'unitprice'=> 5,
         	'retailprice'=> 5,
         	'instock'=> 20,
-        	'reorderlevel'=>5
-       // 	'Image' => ''
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/crime_and_punishment.jpg')
         ]);
         $book->save();
+
         $book = new \App\Books([
-        	'bookname' => 'The philosophers Stone',
+        	'bookname' => 'The Sorcerers Stone',
         	'bookdescription'=> 'First book in the harry potter series',
         	'bookauthor'=>'J.K Rowling',
         	'unitprice'=> 5,
         	'retailprice'=> 5,
         	'instock'=> 20,
-        	'reorderlevel'=>5
-       // 	'Image' => ''
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/sorcerers_stone.jpg')
         ]);
         $book->save();
+
         $book = new \App\Books([
         	'bookname' => 'Wyrd Sisters',
         	'bookdescription'=> 'Kingdoms wobble, crowns topple and knives flash on the magical Discworld as the statutory three witches meddle in royal politics.',
@@ -51,10 +55,59 @@ class BooksTableSeeder extends Seeder
         	'unitprice'=> 5,
         	'retailprice'=> 5,
         	'instock'=> 20,
-        	'reorderlevel'=>5
-       // 	'Image' => ''
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/wyrd_sisters.jpg')
         ]);
         $book->save();
+
+        $book = new \App\Books([
+        	'bookname' => 'War and Peace',
+        	'bookdescription'=> 'A war',
+        	'bookauthor'=>'Leo Tolstoy',
+        	'unitprice'=> 5,
+        	'retailprice'=> 5,
+        	'instock'=> 20,
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/war_and_peace.jpg')
+        ]);
+        $book->save();
+
+        $book = new \App\Books([
+        	'bookname' => 'Moby Dick',
+        	'bookdescription'=> 'A hunt for a whale',
+        	'bookauthor'=>'Herman Melville',
+        	'unitprice'=> 5,
+        	'retailprice'=> 5,
+        	'instock'=> 20,
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/wyrd_sisters.jpg')
+        ]);
+        $book->save();
+        
+        $book = new \App\Books([
+        	'bookname' => 'The Wild Sheep Chase',
+        	'bookdescription'=> 'A hunt for a sheep',
+        	'bookauthor'=>'Haruki Murakami',
+        	'unitprice'=> 5,
+        	'retailprice'=> 5,
+        	'instock'=> 20,
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/sheep_chase.jpg')
+        ]);
+        $book->save();
+        
+        $book = new \App\Books([
+        	'bookname' => '1984',
+        	'bookdescription'=> 'Dystopian future',
+        	'bookauthor'=>'George Orwell',
+        	'unitprice'=> 5,
+        	'retailprice'=> 5,
+        	'instock'=> 20,
+        	'reorderlevel'=>5,
+        	'pathToImage' => asset('images/1984.jpg')
+        ]);
+        $book->save();
+
 
     }
 }

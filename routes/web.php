@@ -16,7 +16,7 @@ Use App\User;
 Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 //Route::get('/contact', 'PagesController@contact');
-Route::get('/books', 'PagesController@books');
+
 
 
 Route::get('/contact', 'TicketsController@create');
@@ -34,3 +34,5 @@ Route::get('/home', 'PagesController@home')->name('home');
 Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('users/register', 'Auth\RegisterController@register');
 Route::get('users/logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::get('/books', 'BooksController@index');

@@ -24,7 +24,7 @@ class CreateBooksTable extends Migration
             $table->integer('instock');
             // Number when books when instock = reordernumber, reorder needs to happen
             $table->integer('reorderlevel');
-        //    $table->string('Image');
+            $table->string('pathToImage');
             $table->timestamps();
 
            // $table->primary('bookid');
