@@ -35,4 +35,8 @@ Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('users/register', 'Auth\RegisterController@register');
 Route::get('users/logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/books', 'BooksController@index');
+Route::get('/books', 'BooksController@display');
+
+
+
+Route::get('/basket', 'BasketController@index');

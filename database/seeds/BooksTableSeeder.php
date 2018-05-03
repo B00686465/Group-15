@@ -19,7 +19,8 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/colour.jpg')
+        	//'pathToImage' => asset('images/colour.jpg')
+        	'pathToImage' => 'images/colour.jpg'
       
         ]);
         $book->save();
@@ -32,7 +33,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/crime_and_punishment.jpg')
+        	'pathToImage' => 'images/crime_and_punishment.jpg'
         ]);
         $book->save();
 
@@ -44,7 +45,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/sorcerers_stone.jpg')
+        	'pathToImage' => 'images/sorcerers_stone.jpg'
         ]);
         $book->save();
 
@@ -56,7 +57,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/wyrd_sisters.jpg')
+        	'pathToImage' => 'images/wyrd_sisters.jpg'
         ]);
         $book->save();
 
@@ -68,7 +69,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/war_and_peace.jpg')
+        	'pathToImage' => 'images/war_and_peace.jpg'
         ]);
         $book->save();
 
@@ -80,7 +81,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/wyrd_sisters.jpg')
+        	'pathToImage' => 'images/wyrd_sisters.jpg'
         ]);
         $book->save();
         
@@ -92,7 +93,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/sheep_chase.jpg')
+        	'pathToImage' => 'images/sheep_chase.jpg'
         ]);
         $book->save();
         
@@ -104,7 +105,7 @@ class BooksTableSeeder extends Seeder
         	'retailprice'=> 5,
         	'instock'=> 20,
         	'reorderlevel'=>5,
-        	'pathToImage' => asset('images/1984.jpg')
+        	'pathToImage' => 'images/1984.jpg'
         ]);
         $book->save();
 

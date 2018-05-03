@@ -7,7 +7,7 @@ use App\Books;
 
 class BooksController extends Controller
 {
-	public function index()
+	public function display()
 	{
 		$books = Books::all();
 		return view('shop.books', compact('books'));
