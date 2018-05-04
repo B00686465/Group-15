@@ -26,6 +26,6 @@ class BooksController extends Controller
     	$request->session()->put('basket', $basket);
     	dd($request->session()->get('basket'));
 
-    	return redirect()->route('books');
+    	return redirect()->route('shop.books');
     }
 }

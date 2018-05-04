@@ -21,7 +21,8 @@
                 <li><a href="/contact">
                     <i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="/books"><i class="fas fa-book"></i> Books</a></li>
-                <li><a href="/basket"><i class="fas fa-shopping-basket"></i> Basket</a></li>
+                <li><a href="/basket"><i class="fas fa-shopping-basket"></i> Basket
+                    <span class="badge"> {{ Session::has('basket') ? Session::get('basket')->qty: '' }}</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
                         <i class="fas fa-user"></i> User

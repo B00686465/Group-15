@@ -35,6 +35,8 @@ Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('users/register', 'Auth\RegisterController@register');
 Route::get('users/logout', 'Auth\LoginController@logout')->name('logout');
 
+
+
 Route::get('/books', 'BooksController@display')->name('books');
 
 
@@ -42,3 +44,9 @@ Route::get('/books', 'BooksController@display')->name('books');
 Route::get('/basket', 'BasketController@index');
 
 Route::get('/basketadd/{id}', 'BooksController@BasketAdd')->name('basketAdd');
+
+Route::prefix('admin')->group(function(){
+  Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+  Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+  Route::get('/', 'AdminController@index')->name('admin.dashboard');
+});

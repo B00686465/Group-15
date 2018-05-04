@@ -29,7 +29,4 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public funcion isAdmin(){
-        return $this-> === self::ADMIN_TYPE;
-    }
 }
