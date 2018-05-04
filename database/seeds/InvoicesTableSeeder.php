@@ -12,106 +12,87 @@ class InvoicesTableSeeder extends Seeder
     public function run()
     {
         $invoice = new \App\Invoices([
-        	'emailaddress' => 'cmudas@gmail.com',
-        	'orderdate'=> 'First book in the discworld series',
-        	'subtotal'=>'Terry Pratchett',
-        	'shippingmethod'=> 5,
-        	'shippingcost'=> 5,
-        	'total'=> 20,
-        	
-      
+        	'emailaddress' => 'cmud31as@gmail.com',
+        	'orderdate'=> 10/14/2017,
+        	'subtotal'=>'10.4',
+        	'shippingmethod'=> '3 Day delivery',
+        	'shippingcost'=> 3.5,
+        	'total'=> 20.0,
         ]);
         $invoice->save();
-        $table->string('sdad@gmail.com');
-            $table->foreign('emailaddress')->references('emailaddress')->on('users');
-            $table->date('orderdate');
-            $table->decimal('subtotal');
-            $table->string('shippingmethod');
-            $table->decimal('shippingcost');
-            $table->decimal('total');
-            $table->timestamps();
-        $book = new \App\Invoices([
-        	'bookname' => 'Crime And Punishment',
-        	'bookdescription'=> 'Psychological crime novel based in St. Petersburg',
-        	'bookauthor'=>'Dostoyevsky',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/crime_and_punishment.jpg'
+        
+        $invoice = new \App\Invoices([
+            'emailaddress' => 'cmud321as@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
         ]);
+        $invoice->save();
+        
+
+        $invoice = new \App\Invoices([
+            'emailaddress' => 'cmudas2das@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
+        ]);
+        $invoice->save();
+
+        $invoice = new \App\Invoices([
+            'emailaddress' => 'cm321udas@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
+        ]);
+        $invoice->save();
+
+        $book = new \App\Invoices([
+        	'emailaddress' => 'cm321udas@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
+        ]);
+    
         $book->save();
 
         $book = new \App\Invoices([
-        	'bookname' => 'The Sorcerers Stone',
-        	'bookdescription'=> 'First book in the harry potter series',
-        	'bookauthor'=>'J.K Rowling',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/sorcerers_stone.jpg'
-        ]);
-        $book->save();
-
-        $book = new \App\Invoices([
-        	'bookname' => 'Wyrd Sisters',
-        	'bookdescription'=> 'Kingdoms wobble, crowns topple and knives flash on the magical Discworld as the statutory three witches meddle in royal politics.',
-        	'bookauthor'=>'Terry Pratchett',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/wyrd_sisters.jpg'
-        ]);
-        $book->save();
-
-        $book = new \App\Invoices([
-        	'bookname' => 'War and Peace',
-        	'bookdescription'=> 'A war',
-        	'bookauthor'=>'Leo Tolstoy',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/war_and_peace.jpg'
-        ]);
-        $book->save();
-
-        $book = new \App\Invoices([
-        	'bookname' => 'Moby Dick',
-        	'bookdescription'=> 'A hunt for a whale',
-        	'bookauthor'=>'Herman Melville',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/wyrd_sisters.jpg'
+        	'emailaddress' => 'cm321udas@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
         ]);
         $book->save();
         
         $book = new \App\Invoices([
-        	'bookname' => 'The Wild Sheep Chase',
-        	'bookdescription'=> 'A hunt for a sheep',
-        	'bookauthor'=>'Haruki Murakami',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/sheep_chase.jpg'
+        	'emailaddress' => 'cm321udas@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
         ]);
+    
         $book->save();
         
         $book = new \App\Invoices([
-        	'bookname' => '1984',
-        	'bookdescription'=> 'Dystopian future',
-        	'bookauthor'=>'George Orwell',
-        	'unitprice'=> 5,
-        	'retailprice'=> 5,
-        	'instock'=> 20,
-        	'reorderlevel'=>5,
-        	'pathToImage' => 'images/1984.jpg'
+        	'emailaddress' => 'cm321udas@gmail.com',
+            'orderdate'=> 10/14/2017,
+            'subtotal'=>'10.4',
+            'shippingmethod'=> '3 Day delivery',
+            'shippingcost'=> 3.5,
+            'total'=> 20.0,
         ]);
+      
         $book->save();
 
 

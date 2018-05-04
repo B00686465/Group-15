@@ -37,7 +37,7 @@ class BooksController extends Controller
     	// Get basket from session variable
     	$previousBasket = Session::get('basket');
     	$basket = new Basket($previousBasket);
-    	return view('shop.basket', ['books' => $ $basket->books, 'Price'=> $basket->sum])
+    	return view('shop.basket', ['books' =>$basket->books, 'Price'=> $basket->sum]);
 
     }
 
