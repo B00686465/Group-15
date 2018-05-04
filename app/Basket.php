@@ -5,7 +5,7 @@ namespace App;
 
 class Basket
 {
-	// Cart object 
+	// Basket object 
     public $books;
     /**
      * The sum of the basket
@@ -58,7 +58,7 @@ class Basket
     	// Adds to the quantity of the books object
     	$this->qty++;
 
-    	// Adds to the sum of the books object
+    	// Adds to the sum of basket object
     	$this->sum += $book->retailprice;
 
     	// Saves the book with the new ID/ old ID in the books object

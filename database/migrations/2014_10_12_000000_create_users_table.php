@@ -22,7 +22,6 @@ class CreateUsersTable extends Migration
             $table->string('postcode', 8);
             $table->string('telephonenumber', 11);
             $table->string('password');
-            $table->string('is_admin')->default('default');
             $table->Boolean('verified')->default(0);
             $table->string('confirmation_code')->nullable();
             $table->rememberToken();

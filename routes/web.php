@@ -41,8 +41,7 @@ Route::get('/books', 'BooksController@display')->name('books');
 
 
 
-Route::get('/basket', 'BasketController@index');
-
+Route::get('/basket', 'BooksController@displayBasket');
 Route::get('/basketadd/{id}', 'BooksController@BasketAdd')->name('basketAdd');
 
 Route::prefix('admin')->group(function(){

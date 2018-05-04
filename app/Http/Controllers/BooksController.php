@@ -24,8 +24,21 @@ class BooksController extends Controller
     	$basket->add($book, $book->id);
     	//
     	$request->session()->put('basket', $basket);
-    	dd($request->session()->get('basket'));
-
+    	// Redirect user back to books page
     	return redirect()->route('shop.books');
     }
+    // return the basket page
+
+    public function displayBasket(){
+    	if( !Session::has('basket'))
+    	{		// Return a basket with no items
+    			return view('shop.basket', ['books'=> null]);
+    	}
+    	// Get basket from session variable
+    	$previousBasket = Session::get('basket');
+    	$basket = new Basket($previousBasket);
+    	return view('shop.basket', ['books' => $ $basket->books, 'Price'=> $basket->sum])
+
+    }
+
 }
