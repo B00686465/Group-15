@@ -20,7 +20,7 @@
                       <p>Author: {{$books->bookauthor }}</p>
                       <p>{{ $books->bookdescription }}</p>
                       <div>
-                      <a href="" class="btn btn-primary center-block" role="button">Add to Basket</a>
+                      <a href="{{ route('basketAdd', ['id' =>$books->id])}}" class="btn btn-primary center-block" role="button">Add to Basket</a>
                     </div>
                     </div>
                 </div>
